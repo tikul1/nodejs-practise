@@ -1,7 +1,7 @@
 //chmod syncronous to allow read and write permission
 const fs = require("fs");
 console.log("giving only read permission");
-fs.chmodSync("hardik3.txt", 0o400);
+fs.chmodSync("hardik3.txt", 0o400);             //fs.constants.S_IRUSR  is not working why?
 
 console.log("current file mode:", fs.statSync("hardik3.txt").mode);    //fs/statsync
 
