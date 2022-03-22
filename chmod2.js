@@ -16,7 +16,7 @@ catch (e) {
 }
 //allowing both read and write permission
 console.log("allowing both read and write permission");
-fs.chmodSync("hardik3.txt", 0o400 | 0o600);                                                                                                                      
+fs.chmodSync("hardik3.txt", 0o400 | 0o200);                                                                                                                      
 
 
 console.log("\ncurrent file mode: ", fs.statSync("hardik3.txt").mode);                            //statSync gets all the stats of files and 
