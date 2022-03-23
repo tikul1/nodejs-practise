@@ -13,6 +13,8 @@ var geek2 = (msg) => {
 eventEmitter.on("myEvent", geek1);
 eventEmitter.on("myEvent", geek1);
 eventEmitter.on("myEvent", geek2);
+// eventEmitter.prependListener("myEvent", geek2);
+//prepend will call this event first
 
 eventEmitter.removeListener("myEvent", geek1);
 

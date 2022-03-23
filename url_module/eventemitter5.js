@@ -5,8 +5,8 @@ const EventEmitter = require("events");
 let em = new EventEmitter();
 
 em.on("myEvent", (msg) => {
-  setImmediate(() => {                                         //setimmediate execute in the next iteraation 
-                                                                    //in a loop
+  setImmediate(() => {
+    //setimmediate execute in the next iteraation in a loop
     console.log("Message: " + msg);
   });
 });
